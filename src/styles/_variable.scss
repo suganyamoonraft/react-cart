@@ -1,0 +1,53 @@
+$primary-color: #1d1917;
+$button-color: #409de0;
+$tag-color: #70ce5a;
+$background: #f1f1f1;
+$white: #ffffff;
+$red: #ff0000;
+
+$font-weights: (
+  'regular': 400,
+  'medium': 600,
+  'bold': 700,
+);
+
+$font-size: (
+  'primary': 16px,
+  'secondary': 14px,
+  'tertiary': 12px,
+  'small': 10px,
+);
+
+$extraLargeDevice: 1361px;
+$largeDevice: 1360px;
+$mediumDevice: 1024px;
+$smallDevice: 780px;
+$extraSmallDevice: 480px;
+
+@mixin extraLargeDevice {
+  @media only screen and (min-width: $extraLargeDevice) {
+    @content;
+  }
+}
+
+@mixin largeDevice {
+  @media only screen and (max-width: $largeDevice) {
+    @content;
+  }
+}
+
+@mixin mediumDevice {
+  @media only screen and (max-width: $mediumDevice) {
+    @content;
+  }
+}
+@mixin smallDevice {
+  @media only screen and (max-width: $smallDevice) {
+    @content;
+  }
+}
+@mixin extraSmallDevice {
+  @media only screen and (max-width: $extraSmallDevice) {
+    @content;
+  }
+}

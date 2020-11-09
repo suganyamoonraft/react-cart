@@ -1,0 +1,14 @@
+@import '../../styles/variable';
+
+.offer-div {
+  background-color: $tag-color;
+  width: 30px;
+  position: absolute;
+  top: 25px;
+}
+.offer-div p {
+  color: $white;
+   font-size: map-get($font-size, tertiary);
+  font-weight: map-get($font-weights, medium);
+  padding: 4px 0px;
+}

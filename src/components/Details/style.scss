@@ -1,0 +1,41 @@
+@import '../../styles/variable';
+
+.details-container {
+  // width: 25%;
+}
+.item-sm-wrapper {
+  border: 1px solid grey;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+.small-img {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+.quantity {
+  border: 1px solid black;
+  padding: 4px;
+  margin: 0px 5px;
+}
+
+.quantity-wrapper {
+  display: flex;
+  align-items: center;
+  width: 20%;
+}
+
+.icon {
+  font-size: map-get($font-size, small);
+  cursor: pointer;
+}
+
+.details-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}

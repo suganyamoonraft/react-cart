@@ -1,0 +1,15 @@
+.item-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0px;
+}
+.item-container :nth-child(1){
+    width: 60%;
+}
+.item-container :nth-child(2){
+    width: 10%;
+}
+.item-container :nth-child(3){
+    width: 30%;
+    text-align: end;
+}

@@ -1,0 +1,20 @@
+@import '../../styles/variable';
+
+.total {
+  // width: 23%;
+  border: 2px solid darkgrey;
+}
+.order-total {
+  background-color: $background;
+  padding: 10px;
+}
+
+.total-heading {
+  color: $primary-color;
+  font-size: 16px;
+  font-weight: map-get($font-weights, bold);
+}
+
+.total-container {
+  padding: 10px;
+}

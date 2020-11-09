@@ -1,0 +1,20 @@
+@import '../../styles/variable';
+
+.right-content {
+  width: 25%;
+  @include largeDevice {
+    width: 25%;
+  }
+  @include mediumDevice {
+    width: 40%;
+  }
+  @include mediumDevice {
+    width: 100%;
+  }
+}
+
+.cart-wrapper {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
