@@ -70,8 +70,8 @@ export default class Cart extends Component {
         };
         newData[id] = newCart[index];
         if (newCart[index].count === 0) {
+          this.setState({ add: true, itemName: newCart[index].name });
           newCart.splice(index, 1);
-          this.setState({ add: true });
           this.animateHandler();
         }
         this.setState({ cartData: newCart, data: newData });
