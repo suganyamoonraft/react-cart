@@ -1,14 +1,11 @@
 @import '../../styles/variable';
 
-.details-container {
-  // width: 25%;
-}
 .item-sm-wrapper {
   border: 1px solid grey;
   width: fit-content;
   display: flex;
   align-items: center;
-  width: 60%;
+  width: 50%;
 }
 .small-img {
   width: 24px;
@@ -25,7 +22,7 @@
 .quantity-wrapper {
   display: flex;
   align-items: center;
-  width: 20%;
+  width: 30%;
 }
 
 .icon {

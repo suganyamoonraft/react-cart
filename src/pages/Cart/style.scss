@@ -2,9 +2,7 @@
 
 .right-content {
   width: 25%;
-  @include largeDevice {
-    width: 25%;
-  }
+  padding: 5px 0px;
   @include mediumDevice {
     width: 40%;
   }
@@ -17,4 +15,42 @@
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
+}
+
+.heading {
+  color: $primary-color;
+  font-size: map-get($font-size, heading);
+}
+
+.added-wrapper {
+  background-color: $tag-color;
+  background-color: $tag-color;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  height: 30px;
+  top: -50px;
+  z-index: 1;
+  border-radius: 5px;
+  position: fixed;
+}
+
+.animate {
+  top: 45px;
+}
+
+.heading-wrapper {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.added-item {
+  overflow: hidden;
+  height: 100%;
+  color: $white;
+  font-weight: map-get($font-weights, bold);
+  line-height: 30px;
+  padding: 0 5px;
 }

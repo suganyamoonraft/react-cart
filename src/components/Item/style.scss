@@ -2,7 +2,6 @@
 
 .items-container {
   height: 300px;
-  // width: 220px;
   border: 2px solid darkgrey;
   margin: 5px;
   position: relative;
@@ -98,5 +97,4 @@
   @include mediumDevice {
     width: 100%;
   }
-  // width: 75%;
 }

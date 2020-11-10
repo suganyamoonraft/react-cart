@@ -7,14 +7,14 @@ import './style.scss';
 
 const Details = (props) => {
   return props.data.length > 0 ? (
-    <div className="details-container">
+    <div>
       <hr />
       <FlexContainer
         data={{ name: 'Items', separator: 'Qty', value: 'rate' }}
       />
       <hr />
       {props.data.map((data) => (
-        <div className="details-wrapper">
+        <div className="details-wrapper" key={data.id}>
           <ItemSmall data={data} />
           <Quantity data={data} modifyItemCount={props.modifyItemCount} />
           <p>{data.price.actual}</p>
